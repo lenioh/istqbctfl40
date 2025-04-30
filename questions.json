@@ -1,0 +1,22 @@
+[
+    {
+      "question": "Which of the following statements describe a valid test objective?",
+      "options": [
+        { "text": "a) To prove that there are no unfixed defects in the system under test", "correct": false },
+        { "text": "b) To prove that there will be no failures after the implementation of the system into production", "correct": false },
+        { "text": "c) To reduce the risk level of the test object and to build confidence in the quality level", "correct": true },
+        { "text": "d) To verify that there are no untested combinations of inputs", "correct": false }
+      ],
+      "explanation": "The typical test objectives are: \n• Evaluating work products such as requirements, user stories, designs, and code \n• Causing failures and finding defects \n• Ensuring required coverage of a test object \n• Reducing the risk level of inadequate software quality \n• Verifying whether specified requirements have been fulfilled \n• Verifying that a test object complies with contractual, legal, and regulatory requirements \n• Providing information to stakeholders to allow them to make informed decisions \n• Building confidence in the quality of the test object \n• Validating whether the test object is complete and works as expected by the stakeholders.\n Test objectives can vary, depending upon the context, which includes the work product being tested, the test level, risks, the software development lifecycle (SDLC) being followed, and factors related to the business context, e.g., corporate structure, competitive considerations, or time to market. "
+    },
+    {
+        "question": "Which of the following options shows an example of test activities that contribute to success?",
+        "options": [
+          { "text": "a) Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products", "correct": true },
+          { "text": "b) Testers try not to disturb the developers while coding, so that the developers write better code", "correct": false },
+          { "text": "c) Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing ", "correct": false },
+          { "text": "d) Certified testers will design much better test cases than non-certified testers", "correct": false }
+        ],
+        "explanation": "1.2.1. Testing’s Contributions to Success \nTesting provides a cost-effective means of detecting defects. These defects can then be removed (by debugging – a non-testing activity), so testing indirectly contributes to higher quality test objects. \nTesting provides a means of directly evaluating the quality of a test object at various phases in the SDLC. These measures are used as part of a larger project management activity, contributing to decisions to move to the next phase of the SDLC, such as the release decision. \nTesting provides users with indirect representation on the development project. Testers ensure that their understanding of users’ needs are considered throughout the development lifecycle. The alternative is to involve a representative set of users as part of the development project, which is not usually possible due to the high costs and lack of availability of suitable users. \nTesting may also be required to meet contractual or legal requirements, or to comply with regulatory standards. "
+    }
+]
