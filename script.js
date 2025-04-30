@@ -1,7 +1,7 @@
 let questions = [];
 let usedIndices = new Set();
 let currentIndex = 0;
-let selectedOption = null;
+let selectedOptions = [];
 let correctCount = 0;
 const maxQuestionsPerSession = 40;
 
@@ -45,8 +45,7 @@ function updateProgressBar(isCorrect) {
 function showSummaryModal() {
     const percentage = ((correctCount / usedIndices.size) * 100).toFixed(1);
     document.getElementById('summary-text').textContent =
-        `You answered ${correctCount} out of ${usedIndices.size} correctly.` +
-        ` (${percentage}%)`;
+        `You answered ${correctCount} out of ${usedIndices.size} correctly. (${percentage}%)`;
     document.getElementById('summary-modal').classList.remove('hidden');
 }
 
@@ -64,6 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function startQuiz() {
+    document.getElementById('summary-modal').classList.add('hidden');
     document.getElementById('start-screen').style.display = 'none';
     document.getElementById('quiz-container').classList.remove('hidden');
     usedIndices.clear();
@@ -75,53 +75,83 @@ function startQuiz() {
 
 function showQuestion() {
     const q = questions[currentIndex];
-    document.getElementById('question-text').textContent = q.question;
-    const opts = document.getElementById('options');
-    opts.innerHTML = '';
-    selectedOption = null;
-    document.getElementById('explanation').textContent = '';
+    const optsSection = document.getElementById('options-section');
+    const optsContainer = document.getElementById('options');
+    const instruction = document.createElement('p');
+    instruction.textContent = `Select ${q.selectCount} option(s)!`;
+    optsSection.appendChild(instruction);
+    selectedOptions = [];
+    document.getElementById('question-text').innerHTML = q.question;
+    optsContainer.innerHTML = '';
+    document.getElementById('explanation').innerHTML = '';
+
+    // Figure out how many you must pick
+    const selectCount = q.selectCount || 1;
 
     // Show only Submit
-    document.getElementById('submit-btn').style.display = 'inline-block';
-    document.getElementById('submit-btn').disabled = true;
-    document.getElementById('next-btn').style.display = 'none';
+    const submitBtn = document.getElementById('submit-btn');
+    const nextBtn   = document.getElementById('next-btn');
+    submitBtn.style.display = 'inline-block';
+    submitBtn.disabled = true;
+    nextBtn.style.display   = 'none';
 
+    // Render options
     q.options.forEach((opt, idx) => {
         const btn = document.createElement('button');
         btn.textContent = opt.text;
         btn.className = 'option-btn';
-        btn.onclick = () => {
-            document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-            selectedOption = idx;
-            document.getElementById('submit-btn').disabled = false;
-        };
-        opts.appendChild(btn);
+        btn.onclick = () => toggleOption(btn, idx, selectCount);
+        optsContainer.appendChild(btn);
     });
+}
+
+function toggleOption(button, idx, maxSelect) {
+    const i = selectedOptions.indexOf(idx);
+    if (i > -1) {
+        // unselect
+        selectedOptions.splice(i, 1);
+        button.classList.remove('selected');
+    } else if (selectedOptions.length < maxSelect) {
+        // select
+        selectedOptions.push(idx);
+        button.classList.add('selected');
+    }
+    // only enable Submit when exactly the right number are selected
+    document.getElementById('submit-btn').disabled =
+        selectedOptions.length !== maxSelect;
 }
 
 function handleSubmit() {
     const q = questions[currentIndex];
-    const correctIdx = q.options.findIndex(o => o.correct);
+    const correctIndices = q.options
+        .map((o, i) => o.correct ? i : -1)
+        .filter(i => i > -1);
 
+    // Disable & color all options
     document.querySelectorAll('.option-btn').forEach((btn, idx) => {
         btn.disabled = true;
-        if (idx === correctIdx) {
-            btn.style.backgroundColor = '#79f57d';   // green for correct
+        if (correctIndices.includes(idx)) {
+            btn.style.backgroundColor = '#a4eda6';   // green for correct
         } else {
-            btn.style.backgroundColor = '#ffcdd2';   // red for all others
+            btn.style.backgroundColor = '#ffcdd2';   // red for wrong
         }
     });
 
-    document.getElementById('explanation').textContent = q.explanation;
+    // Render explanation as HTML (so <strong>...</strong> and <br> work)
+    document.getElementById('explanation').innerHTML = q.explanation;
 
-    // Swap buttons
-    document.getElementById('submit-btn').style.display = 'none';
-    const nextBtn = document.getElementById('next-btn');
-    nextBtn.style.display = 'inline-block';
-    nextBtn.disabled = false;
+    // Swap Submit → Next
+    const submitBtn = document.getElementById('submit-btn');
+    const nextBtn   = document.getElementById('next-btn');
+    submitBtn.style.display = 'none';
+    nextBtn.style.display   = 'inline-block';
+    nextBtn.disabled        = false;
 
-    updateProgressBar(selectedOption === correctIdx);
+    // Determine multi-select correctness
+    const isAllCorrect = selectedOptions.length === correctIndices.length
+        && selectedOptions.every(i => correctIndices.includes(i));
+
+    updateProgressBar(isAllCorrect);
 }
 
 

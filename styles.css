@@ -38,7 +38,7 @@
     margin-bottom: 20px;
   }
   #question-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background: #b8e6e6;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
@@ -56,6 +56,9 @@
     margin-bottom: 10px;
     text-align: left;
   }
+  #options .option-btn.selected {
+    background-color: #73b4f1;
+  }  
   
   /* Explanation */
   .explanation {
@@ -65,7 +68,6 @@
     border-left: 4px solid #21f356;
     border-radius: 4px;
     min-height: 3em;
-    white-space: pre-line; /* honors JSON "\n" */
   }
   
   /* Controls Layout */
@@ -93,9 +95,6 @@
   }
   .option-btn {
     background: #e0e0e0;
-  }
-  .option-btn.selected {
-    background: #bbb;
   }
   button:disabled:not(.option-btn) {
         opacity: 0.5;

@@ -1,22 +1,46 @@
 [
     {
       "question": "Which of the following statements describe a valid test objective?",
+      "selectCount": 1,
       "options": [
         { "text": "a) To prove that there are no unfixed defects in the system under test", "correct": false },
         { "text": "b) To prove that there will be no failures after the implementation of the system into production", "correct": false },
         { "text": "c) To reduce the risk level of the test object and to build confidence in the quality level", "correct": true },
         { "text": "d) To verify that there are no untested combinations of inputs", "correct": false }
       ],
-      "explanation": "The typical test objectives are: \n• Evaluating work products such as requirements, user stories, designs, and code \n• Causing failures and finding defects \n• Ensuring required coverage of a test object \n• Reducing the risk level of inadequate software quality \n• Verifying whether specified requirements have been fulfilled \n• Verifying that a test object complies with contractual, legal, and regulatory requirements \n• Providing information to stakeholders to allow them to make informed decisions \n• Building confidence in the quality of the test object \n• Validating whether the test object is complete and works as expected by the stakeholders.\n Test objectives can vary, depending upon the context, which includes the work product being tested, the test level, risks, the software development lifecycle (SDLC) being followed, and factors related to the business context, e.g., corporate structure, competitive considerations, or time to market. "
+      "explanation": "a) Is not correct. It is impossible to prove that there are no defects anymore in the system under test. See testing principle 1 <br>b) Is not correct. See testing principle 7 <br>c) Is correct. Testing finds defects and failures which reduces the level of risk and at the same time gives more confidence in the quality level of the test object <br>d) Is not correct. It is impossible to test all combinations of inputs (see testing principle 2) <br><br>FL-1.1.1 "
     },
     {
         "question": "Which of the following options shows an example of test activities that contribute to success?",
+        "selectCount": 1,
         "options": [
           { "text": "a) Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products", "correct": true },
           { "text": "b) Testers try not to disturb the developers while coding, so that the developers write better code", "correct": false },
           { "text": "c) Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing ", "correct": false },
           { "text": "d) Certified testers will design much better test cases than non-certified testers", "correct": false }
         ],
-        "explanation": "1.2.1. Testing’s Contributions to Success \nTesting provides a cost-effective means of detecting defects. These defects can then be removed (by debugging – a non-testing activity), so testing indirectly contributes to higher quality test objects. \nTesting provides a means of directly evaluating the quality of a test object at various phases in the SDLC. These measures are used as part of a larger project management activity, contributing to decisions to move to the next phase of the SDLC, such as the release decision. \nTesting provides users with indirect representation on the development project. Testers ensure that their understanding of users’ needs are considered throughout the development lifecycle. The alternative is to involve a representative set of users as part of the development project, which is not usually possible due to the high costs and lack of availability of suitable users. \nTesting may also be required to meet contractual or legal requirements, or to comply with regulatory standards. "
+        "explanation": "a) Is correct. It is important that testers are involved from the beginning of the software development lifecycle (SDLC). It will increase understanding of design decisions and will detect defects early. <br>b) Is not correct. Both developers and testers will have more understanding of each other's work products and how to test the code <br>c) Is not correct. End users will not help the testers in increasing the quality of defect reports; also, users usually do not participate in low-level testing levels like integration testing <br>d) Is not correct. Being certified does not automatically mean that the tester will be better in test design <br><br>FL-1.2.1"
+    },
+    {
+        "question": "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. <br><br>Which testing principle explains your skepticism?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Tests wear out", "correct": true },
+          { "text": "b) Absence-of-errors fallacy", "correct": false },
+          { "text": "c) Defects cluster together", "correct": false },
+          { "text": "d) Exhaustive testing is impossible", "correct": false }
+        ],
+        "explanation": "a) Is correct. This principle means that if the same tests are repeated over and over again, eventually these tests no longer find any new defects. This is probably why the tests all passed in this release as well <br>b) Is not correct. This principle says about the mistaken belief that just finding and fixing a large number of defects will ensure the success of a system <br>c) Is not correct. This principle says that a small number of components usually contain most of the defects <br>d) Is not correct. This principle states that testing all combinations of inputs and preconditions is not feasible <br><br>FL-1.3.1"
+    },
+    {
+        "question": "You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. <br><br>Which of the following activities is a part of test analysis? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Estimating that testing the integration with the payment service will take 8 person-days", "correct": false },
+          { "text": "b) Deciding that the team should test if it is possible to properly share payment between many users", "correct": true },
+          { "text": "c) Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be paid", "correct": false },
+          { "text": "d) Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect ", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Estimating the test effort is part of test planning <br>b) Is correct. This is an example of defining test conditions which is a part of test analysis <br>c) Is not correct. Using test techniques to derive coverage items is a part of test design <br>d) Is not correct. Reporting defects found during dynamic testing is a part of test execution <br><br>FL-1.4.1 "
     }
 ]
