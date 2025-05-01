@@ -219,5 +219,38 @@
           { "text": "d) 6", "correct": false }
         ],
         "explanation": "“Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. <br>We need two more test cases to cover the two other “floor” partitions and a remaining ”garden type” partition of “no garden”. <br>We need a total of four test cases: <br>- TC1 (ground floor, small garden) <br>- TC2 (ground floor, large garden) <br>- TC3 (first floor, no garden) <br>- TC4 (second or higher floor, no garden) <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.1"
+    },
+    {
+        "question": "You are testing a system that calculates the final course grade for a given student. <br>The final grade is assigned based on the final result, according to the following rules: <br>- 0 – 50 points: failed <br>- 51 – 60 points: fair <br>- 61 – 70 points: satisfactory <br>- 71 – 80 points: good <br>- 81 – 90 points: very good <br>- 91 – 100 points: excellent <br>You have prepared the following set of test cases: <br> <img src=\"img/qA21.png\"> <br>What is the 2-value Boundary Value Analysis (BVA) coverage for the final result that is achieved with the existing test cases?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 50%", "correct": true },
+          { "text": "b) 60%", "correct": false },
+          { "text": "c) 33.3%", "correct": false },
+          { "text": "d) 100%", "correct": false }
+        ],
+        "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. <br>The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). <br>Therefore, the test cases cover 6/12 = 50%. <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.2"
+    },
+    {
+        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/qA22.png> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) R4", "correct": false },
+          { "text": "b) R2", "correct": false },
+          { "text": "c) R6", "correct": false },
+          { "text": "d) R8", "correct": true }
+        ],
+        "explanation": "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals <br>b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times <br>c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet <br>d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct <br><br>FL-4.2.3"
+    },
+    {
+        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/qA23.png> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 4", "correct": false },
+          { "text": "b) 2", "correct": false },
+          { "text": "c) 7", "correct": false },
+          { "text": "d) 3", "correct": true }
+        ],
+        "explanation": "“test” and “error” transitions cannot occur in one test case. <br>Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: <br>TC1: test, done <br>TC2: run, error, done <br>TC3: run, pause, resume, pause, done <br>Thus: <br>a) Is not correct <br>b) Is not correct <br>c) Is not correct <br>d) Is correct<br><br>FL-4.2.4"
     }
 ]

@@ -30,7 +30,7 @@
   /* Quiz Container */
   #quiz-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
   }
   #main-sections {
     display: flex;
