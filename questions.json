@@ -232,7 +232,7 @@
         "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. <br>The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). <br>Therefore, the test cases cover 6/12 = 50%. <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.2"
     },
     {
-        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/qA22\".png> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
+        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/qA22.png\"> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
         "selectCount": 1,
         "options": [
           { "text": "a) R4", "correct": false },
@@ -243,7 +243,7 @@
         "explanation": "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals <br>b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times <br>c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet <br>d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct <br><br>FL-4.2.3"
     },
     {
-        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/qA23\".png> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
+        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/qA23.png\"> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
         "selectCount": 1,
         "options": [
           { "text": "a) 4", "correct": false },
@@ -281,7 +281,7 @@
         "options": [
           { "text": "a) Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers", "correct": true },
           { "text": "b) Error guessing involves using your personal experience of development and the errors you made as a developer", "correct": false },
-          { "text": "c) White-box test techniques can be used in static testingc) Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it", "correct": false },
+          { "text": "c) Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it", "correct": false },
           { "text": "d) Error guessing requires you to rapidly duplicate the development task to identify the sort of errors a developer might make ", "correct": false }
         ],
         "explanation": "a) Is correct. The basic concept behind error guessing is that the tester tries to guess what errors may have been made by the developer and what defects may be in the test object based on past experience (and sometimes checklists) <br>b) Is not correct. Although a testers who used to be a developer may use their personal experience to help them when performing error guessing, the test technique is not based on prior knowledge of development <br>c) Is not correct. Error guessing is not a usability technique for guessing how users may fail to interact with the test object <br>d) Is not correct. Duplicating the development task has several flaws that make it impractical, such as the tester having equivalent skills to the developer and the time involved to perform the development. It is not error guessing <br><br>FL-4.4.1"
