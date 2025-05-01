@@ -232,7 +232,7 @@
         "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. <br>The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). <br>Therefore, the test cases cover 6/12 = 50%. <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.2"
     },
     {
-        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/qA22.png> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
+        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/qA22\".png> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
         "selectCount": 1,
         "options": [
           { "text": "a) R4", "correct": false },
@@ -243,7 +243,7 @@
         "explanation": "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals <br>b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times <br>c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet <br>d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct <br><br>FL-4.2.3"
     },
     {
-        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/qA23.png> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
+        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/qA23\".png> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
         "selectCount": 1,
         "options": [
           { "text": "a) 4", "correct": false },
@@ -252,5 +252,193 @@
           { "text": "d) 3", "correct": true }
         ],
         "explanation": "“test” and “error” transitions cannot occur in one test case. <br>Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: <br>TC1: test, done <br>TC2: run, error, done <br>TC3: run, pause, resume, pause, done <br>Thus: <br>a) Is not correct <br>b) Is not correct <br>c) Is not correct <br>d) Is correct<br><br>FL-4.2.4"
+    },
+    {
+        "question": "Your test suite achieved 100% statement coverage. What is the consequence of this fact? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Each instruction in the code that contains a defect has been executed at least once", "correct": true },
+          { "text": "b) Any test suite containing more test cases than your test suite will also achieve 100% statement coverage", "correct": false },
+          { "text": "c) Each path in the code has been executed at least once", "correct": false },
+          { "text": "d) Every combination of input values has been tested at least once", "correct": false }
+        ],
+        "explanation": "a) Is correct. Since 100% statement coverage is achieved, every statement, including the ones with defects, must have been executed and evaluated at least once <br>b) Is not correct. Coverage depends on what is tested, not on the number of test cases. For example, for code “if (x==0) y=1”, one test case (x=0) achieves 100% statement coverage, but two test cases (x=1) and (x=2) together achieve only 50% statement coverage <br>c) Is not correct. If there is a loop in the code there may be an infinite number of possible paths, so it is not possible to execute all the possible paths in the code <br>d) Is not correct. Exhaustive testing is not possible (see the seven testing principles section in the syllabus). For example, for code “input x; print x” any single test with arbitrary x achieves 100% statement coverage, but covers one input value<br><br>FL-4.3.1"
+    },
+    {
+        "question": "Which of the following is NOT true for white-box testing? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) During white-box testing the entire software implementation is considered", "correct": false },
+          { "text": "b) White-box coverage metrics can help identify additional tests to increase code coverage", "correct": false },
+          { "text": "c) White-box test techniques can be used in static testing", "correct": false },
+          { "text": "d) White-box testing can help identify gaps in requirements implementation", "correct": true }
+        ],
+        "explanation": "a) Is not correct. The fundamental strength of white-box test techniques is that the entire software implementation is taken into account during testing <br>b) Is not correct. White-box coverage measures provide an objective measure of coverage and provide the necessary information to allow additional tests to be generated to increase this coverage <br>c) Is not correct. White-box test techniques can be used to perform reviews (static testing) <br>d) Is correct. This is the weakness of the white-box test techniques. They are not able to identify the missing implementation, because they are based solely on the test object structure, not on the requirements specification <br><br>FL-4.3.3"
+    },
+    {
+        "question": "Which of the following BEST describes the concept behind error guessing? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers", "correct": true },
+          { "text": "b) Error guessing involves using your personal experience of development and the errors you made as a developer", "correct": false },
+          { "text": "c) White-box test techniques can be used in static testingc) Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it", "correct": false },
+          { "text": "d) Error guessing requires you to rapidly duplicate the development task to identify the sort of errors a developer might make ", "correct": false }
+        ],
+        "explanation": "a) Is correct. The basic concept behind error guessing is that the tester tries to guess what errors may have been made by the developer and what defects may be in the test object based on past experience (and sometimes checklists) <br>b) Is not correct. Although a testers who used to be a developer may use their personal experience to help them when performing error guessing, the test technique is not based on prior knowledge of development <br>c) Is not correct. Error guessing is not a usability technique for guessing how users may fail to interact with the test object <br>d) Is not correct. Duplicating the development task has several flaws that make it impractical, such as the tester having equivalent skills to the developer and the time involved to perform the development. It is not error guessing <br><br>FL-4.4.1"
+    },
+    {
+        "question": "In your project there has been a delay in the release of a brand-new application and test execution started late, but you have very detailed domain knowledge and good analytical skills. The full list of requirements has not yet been shared with the team, but management is asking for some test results to be presented. <br><br>Which test technique fits BEST in this situation?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Checklist-based testing", "correct": false },
+          { "text": "b) Error guessing", "correct": false },
+          { "text": "c) Exploratory testing", "correct": true },
+          { "text": "d) Branch testing", "correct": false }
+        ],
+        "explanation": "a) Is not correct. This is a new product. You probably do not have a checklist yet and test conditions might not be known due to missing requirements <br>b) Is not correct. This is a new product. You probably do not have enough information to make correct error guesses <br>c) Is correct. Exploratory testing is most useful when there are few known specifications and/or there is a pressing timeline for testing <br>d) Is not correct. Branch testing is time-consuming, and your management is asking about some test results now. Also, branch testing does not involve domain knowledge <br><br>FL-4.4.2"
+    },
+    {
+        "question": "Which of the following BEST describes the way acceptance criteria can be documented?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Performing retrospectives to determine the actual needs of the stakeholders regarding a given user story", "correct": false },
+          { "text": "b) Using the given/when/then format to describe an example test condition related to a given user story", "correct": true },
+          { "text": "c) Using verbal communication to reduce the risk of misunderstanding the acceptance criteria by others", "correct": false },
+          { "text": "d) Documenting risks related to a given user story in a test plan to facilitate the risk-based testing of a given user story", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Retrospectives are used to capture lessons learned and to improve the development and testing process, not to document the acceptance criteria <br>b) Is correct. This is the standard way to document acceptance criteria <br>c) Is not correct. Verbal communication does not allow to physically document the acceptance criteria as part of a user story (”card” aspect in the 3C’s model) <br>d) Is not correct. Acceptance criteria are related to a user story, not a test plan. Also, acceptance criteria are the conditions that have to be fulfilled to decide if the user story is complete. Risks are not such conditions <br><br>FL-4.5.2"
+    },
+    {
+        "question": "Consider the following user story: <br><br><i>As an Editor <br>I want to review content before it is published <br>so that I can assure the grammar is correct</i><br><br>and its acceptance criteria: <br>- The user can log in to the content management system with \"Editor\" role <br>- The editor can view existing content pages <br>- The editor can edit the page content <br>- The editor can add markup comments <br>- The editor can save changes <br>- The editor can reassign to the  \"content owner\" role to make updates <br>Which of the following is the BEST example of an ATDD test for this user story? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Test if the editor can save the document after edit the page content", "correct": true },
+          { "text": "b) Test if the content owner can log in and make updates to the content", "correct": false },
+          { "text": "c) Test if the editor can schedule the edited content for publication", "correct": false },
+          { "text": "d) Test if the editor can reassign to another editor to make updates", "correct": false }
+        ],
+        "explanation": "a) Is correct. This test covers two acceptance criteria: one about editing the document and one about saving changes <br>b) Is not correct. Acceptance criteria cover the editor activities, not the content owner activities <br>c) Is not correct. Scheduling the edited content for publication may be a nice feature, but it is not covered by the acceptance criteria <br>d) Is not correct. Acceptance criteria state about reassigning from an editor to the content owner, not to another editor <br><br>FL-4.5.3"
+    },
+    {
+        "question": "How do testers add value to iteration and release planning?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Testers determine the priority of the user stories to be developed", "correct": false },
+          { "text": "b) Testers focus only on the functional aspects of the system to be tested", "correct": false },
+          { "text": "c) Testers participate in the detailed risk identification and risk assessment of user stories", "correct": true },
+          { "text": "d) Testers guarantee the release of high-quality software through early test design during the release planning", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Priorities for user stories are determined by the business representative together with the development team <br>b) Is not correct. Testers focus on both functional and non-functional aspects of the system to be tested <br>c) Is correct. According to the syllabus, this is one of the ways testers add value to iteration and release planning <br>d) Is not correct. Early test design is not part of release planning. Early test design does not automatically guarantee the release of quality software <br><br>FL-5.1.2"
+    },
+    {
+        "question": "Which TWO of the following options are the exit criteria for testing a system?",
+        "selectCount": 2,
+        "options": [
+          { "text": "a) Test environment readiness", "correct": false },
+          { "text": "b) The ability to log in to the test object by the tester", "correct": false },
+          { "text": "c) Estimated defect density is reached ", "correct": true },
+          { "text": "d) Requirements are translated into given/when/then format", "correct": false },
+          { "text": "e) Regression tests are automated", "correct": true }
+        ],
+        "explanation": "a) Is not correct. Test environment readiness is a resource availability criterion; hence it belongs to the entry criteria <br>b) Is not correct. This is a resource availability criterion; hence it belongs to the entry criteria <br>c) Is correct. Estimated defect density is a measure of diligence; hence it belongs to the exit criteria. <br>d) Is not correct. Requirements translated into a given format result in testable requirements; hence it belongs to the entry criteria <br>e) Is correct. Automation of regression tests is a completion criterion; hence it belongs to the exit criteria <br><br>FL-5.1.3"
+    },
+    {
+        "question": "Your team uses the three-point estimation technique to estimate the test effort for a new high-risk feature. The following estimates were made: <br>- Most optimistic estimation: 2 person-hours <br>- Most likely estimation: 11 person-hours <br>- Most pessimistic estimation: 14 person-hours <br>What is the final estimate?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 9 person-hours ", "correct": false },
+          { "text": "b) 14 person-hours", "correct": false },
+          { "text": "c) 11 person-hours ", "correct": false },
+          { "text": "d) 10 person-hours ", "correct": true }
+        ],
+        "explanation": "In the three-point estimation technique: <br>E = (optimistic + 4*most likely + pessimistic)/6 <br>E = (2+(4*11)+14)/6 = 10 <br><br>Thus: <br>a) Is not correct <br>b) Is not correct <br>c) Is not correct <br>d) Is correct <br><br>FL-5.1.3"
+    },
+    {
+        "question": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities (i.e., a smaller number means a higher priority), and dependencies: <br> <img src=\"img/qA33.png\"> <br><br>Which of the following test cases should be executed as the third one?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) TC 003", "correct": true },
+          { "text": "b) TC 005", "correct": false },
+          { "text": "c) TC 002", "correct": false },
+          { "text": "d) TC 001", "correct": false }
+        ],
+        "explanation": "Test TC 001 must come first, followed by TC 002, to satisfy dependencies. <br>Afterwards, TC 003 to satisfy priority and then TC 004, followed by TC 005. <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct<br><br>FL-5.1.5"
+    },
+    {
+        "question": "Consider the following test categories (1-4) and agile testing quadrants (A-D): <br><br>1. Usability testing <br>2. Component testing <br>3. Functional testing <br>4. Reliability testing <br><br>A. Agile testing quadrant Q1: technology facing, supporting the development team <br>B. Agile testing quadrant Q2: business facing, supporting the development team <br>C. Agile testing quadrant Q3: business facing, critique the product <br>D. Agile testing quadrant Q4: technology facing, critique the product <br><br>How do the following test categories map onto the agile testing quadrants? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 1C, 2A, 3B, 4D", "correct": true },
+          { "text": "b) 1D, 2A, 3C, 4B ", "correct": false },
+          { "text": "c) 1C, 2B, 3D, 4A", "correct": false },
+          { "text": "d) 1D, 2B, 3C, 4A", "correct": false }
+        ],
+        "explanation": "Considering: <br>- Usability testing is in Q3 (1 – C) <br>- Component testing is in Q1 (2 – A) <br>- Functional testing is in Q2 (3 – B) <br>- Reliability testing is in Q4 (4 – D) <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-5.1.7"
+    },
+    {
+        "question": "During a risk analysis the following risk was identified and assessed: <br>- Risk: Response time is too long to generate a report <br>- Risk likelihood: medium; risk impact: high <br>- Response to risk: <br>&emsp;o An independent test team performs performance testing during system testing <br>&emsp;o A selected sample of end users performs alpha and beta acceptance testing before the release <br>What measure is proposed to be taken in response to this analyzed risk? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Risk acceptance ", "correct": false },
+          { "text": "b) Contingency plan", "correct": false },
+          { "text": "c) Risk mitigation ", "correct": true },
+          { "text": "d) Risk transfer ", "correct": false }
+        ],
+        "explanation": "a) Is not correct. We do not accept the risk; concrete actions are proposed <br>b) Is not correct. No contingency plans are proposed <br>c) Is correct. The proposed actions are related to testing, which is a form of risk mitigation <br>d) Is not correct. Risk is not transferred but mitigated<br><br>FL-5.2.4"
+    },
+    {
+        "question": "Which work product can be used by an agile team to show the amount of work that has been completed and the amount of total work remaining for a given iteration?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Acceptance criteria ", "correct": false },
+          { "text": "b) Defect report", "correct": false },
+          { "text": "c) Test completion report ", "correct": false },
+          { "text": "d) Burndown chart", "correct": true }
+        ],
+        "explanation": "a) Is not correct. Acceptance criteria are the conditions used to decide whether the user story is ready. They cannot show work progress <br>b) Is not correct. Defect reports inform about the defects. They do not show work progress <br>c) Is not correct. Test completion report can be created after the iteration is finished, so it will not show the progress continuously within an iteration <br>d) Is correct. Burndown charts are a graphical representation of work left to do versus time remaining. They are updated daily, so they can continuously show the work progress <br><br>FL-5.3.3 "
+    },
+    {
+        "question": "You need to update one of the automated test scripts to be in line with a new requirement. Which process indicates that you create a new version of the test script in the test repository?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Traceability management", "correct": false },
+          { "text": "b) Maintenance testing", "correct": false },
+          { "text": "c) Configuration management ", "correct": true },
+          { "text": "d) Requirements engineering", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Traceability is the relationship between two or more work products, not between different versions of the same work product <br>b) Is not correct. Maintenance testing is about testing changes; it is not related closely to versioning <br>c) Is correct. To support testing, configuration management may involve the version control of all test items <br>d) Is not correct. Requirements engineering is the elicitation, documentation, and management of requirements; it is not closely related to test script versioning <br><br>FL-5.4.1 "
+    },
+    {
+        "question": "You received the following defect report from the developers stating that the anomaly described in this test report is not reproducible.<br> <i>Application hangs up <br>2022-May-03 – John Doe – Rejected <br>The application hangs up after entering “Test input: $ä” in the Name field on the new user creation screen. Tried to log off, log in with test_admin01 account, same issue. Tried with other test admin accounts, same issue. No error message received; log (see attached) contains fatal error notification. Based on the test case TC-1305, the application should accept the provided input and create the user. Please fix with high priority, this feature is related to REQ-0012, which is a critical new business requirement.</i><br><br>What critical information is MISSING from this test report that would have been useful for the developers? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Expected result and actual result", "correct": false },
+          { "text": "b) References and defect status", "correct": false },
+          { "text": "c) Test environment and test item", "correct": true },
+          { "text": "d) Priority and severity", "correct": false }
+        ],
+        "explanation": "a) Is not correct. The expected result is “the application should accept the provided input and create the user”. The actual result is “The application hangs up after entering “Test input. $ä””. <br>b) Is not correct. There is a reference to the test case and to the related requirement and it states that the defect is rejected. Also, the defect status would not be very helpful for the developers <br>c) Is correct. We do not know in which test environment the anomaly was detected, and we also do not know which application (and its version) is affected <br>d) Is not correct. The defect report states that the anomaly is urgent, that it is a global issue (i.e., many, if not all, test administration accounts are affected) and states the impact is high for business stakeholders <br><br>FL-5.5.1"
+    },
+    {
+        "question": "Which test activity does a data preparation tool support?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Test monitoring and control ", "correct": false },
+          { "text": "b) Test analysis", "correct": false },
+          { "text": "c) Test design and implementation ", "correct": true },
+          { "text": "d) Test completion", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Test monitoring involves the ongoing checking of all activities and comparison of actual progress against the test plan. Test control involves taking the actions necessary to meet the test objectives of the test plan. No test data are prepared during these activities. <br>b) Is not correct. Test analysis includes analysis of the test basis to identify test conditions and prioritize them. Test data are not prepared during this activity. <br>c) Is correct. Test design and implementation can both include the identification, creation or acquisition of the testware necessary for test execution (e.g., test data). <br>d) Is not correct. Test completion activities occur at project milestones (e.g., release, end of iteration, test level completion), so it is too late for preparing test data. <br><br>FL-6.1.1"
+    },
+    {
+        "question": "Which item correctly identifies a potential risk of performing test automation?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) It may introduce unknown regressions in production", "correct": false },
+          { "text": "b) Sufficient efforts to maintain testware may not be properly allocated", "correct": true },
+          { "text": "c) Testing tools and associated testware may not be sufficiently relied upon", "correct": false },
+          { "text": "d) It may reduce the time allocated for manual testing ", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Test automation does not introduce unknown regressions in production <br>b) Is correct. Wrong allocation of effort to maintain testware is a risk <br>c) Is not correct. Test tools must be selected so that they and their testware can be relied upon <br>d) Is not correct. The primary goal of test automation is to reduce manual testing. So, this is a benefit, not a risk <br><br>FL-6.2.1 "
     }
 ]
