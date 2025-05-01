@@ -77,9 +77,16 @@ function showQuestion() {
     const q = questions[currentIndex];
     const optsSection = document.getElementById('options-section');
     const optsContainer = document.getElementById('options');
+    // Remove any existing instruction paragraph first
+    const oldInstruction = optsSection.querySelector('.instruction');
+    if (oldInstruction) oldInstruction.remove();
+
+    // Create and append a new one
     const instruction = document.createElement('p');
     instruction.textContent = `Select ${q.selectCount} option(s)!`;
+    instruction.className = 'instruction';
     optsSection.appendChild(instruction);
+
     selectedOptions = [];
     document.getElementById('question-text').innerHTML = q.question;
     optsContainer.innerHTML = '';
@@ -90,10 +97,10 @@ function showQuestion() {
 
     // Show only Submit
     const submitBtn = document.getElementById('submit-btn');
-    const nextBtn   = document.getElementById('next-btn');
+    const nextBtn = document.getElementById('next-btn');
     submitBtn.style.display = 'inline-block';
     submitBtn.disabled = true;
-    nextBtn.style.display   = 'none';
+    nextBtn.style.display = 'none';
 
     // Render options
     q.options.forEach((opt, idx) => {
@@ -142,10 +149,10 @@ function handleSubmit() {
 
     // Swap Submit → Next
     const submitBtn = document.getElementById('submit-btn');
-    const nextBtn   = document.getElementById('next-btn');
+    const nextBtn = document.getElementById('next-btn');
     submitBtn.style.display = 'none';
-    nextBtn.style.display   = 'inline-block';
-    nextBtn.disabled        = false;
+    nextBtn.style.display = 'inline-block';
+    nextBtn.disabled = false;
 
     // Determine multi-select correctness
     const isAllCorrect = selectedOptions.length === correctIndices.length

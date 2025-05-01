@@ -42,5 +42,182 @@
           { "text": "d) Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect ", "correct": false }
         ],
         "explanation": "a) Is not correct. Estimating the test effort is part of test planning <br>b) Is correct. This is an example of defining test conditions which is a part of test analysis <br>c) Is not correct. Using test techniques to derive coverage items is a part of test design <br>d) Is not correct. Reporting defects found during dynamic testing is a part of test execution <br><br>FL-1.4.1 "
+    },
+    {
+        "question": "Which of the following factors have a SIGNIFICANT influence on the test approach? <br>i. The SDLC <br>ii. The number of defects detected in previous projects <br>iii. The identified product risks <br>iv. New regulatory requirements forcing formal white-box testing <br>v. The test environment setup",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) i, ii have significant influence ", "correct": false },
+          { "text": "b) i, iii, iv have significant influence ", "correct": true },
+          { "text": "c) ii, iv, v have significant influence ", "correct": false },
+          { "text": "d) iii, v have significant influence", "correct": false }
+        ],
+        "explanation": "i. Is true. The SDLC has an influence on the test approach <br>ii. Is false. The number of defects detected in previous projects may have some influence, but this is not as significant as i, iii and iv <br>iii. Is true. The identified product risks are one of the most important factors influencing the test approach <br>iv. Is true. Regulatory requirements are important factors influencing the test approach <br>v. Is false. The test environment has no significant influence on the test approach <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-1.4.2"
+    },
+    {
+        "question": "Which TWO of the following tasks belong MAINLY to a testing role?",
+        "selectCount": 2,
+        "options": [
+          { "text": "a) Configure test environments ", "correct": true },
+          { "text": "b) Maintain the product backlog ", "correct": false },
+          { "text": "c) Design solutions to new requirements ", "correct": false },
+          { "text": "d) Create the test plan ", "correct": false },
+          { "text": "e) Analyze the test basis", "correct": true }
+        ],
+        "explanation": "a) Is correct. This is done by the testers <br>b) Is not correct. The product backlog is built and maintained by the product owner <br>c) Is not correct. This is done by the development team <br>d) Is not correct. This is a managerial role <br>e) Is correct. This is done by the testers since its technical task done as part of a test analysis.  <br><br>FL-1.4.5"
+    },
+    {
+        "question": "Which of the following skills (i-v) are the MOST important skills of a tester?<br> <br>i. Having domain knowledge <br>ii. Creating a product vision <br>iii. Being a good team player <br>iv. Planning and organizing the work of the team <br>v. Critical thinking",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) ii and iv are important", "correct": false },
+          { "text": "b) i, iii and v are important", "correct": true },
+          { "text": "c) i, ii and v are important", "correct": false },
+          { "text": "d) iii and iv are important", "correct": false }
+        ],
+        "explanation": "i. Is true. Having domain knowledge is an important tester skill <br>ii. Is false. This is a task of the business analyst together with the business representative <br>iii. Is true. Being a good team player is an important skill <br>iv. Is false. Planning and organizing the work of the team is a task of the test manager or, mostly in an Agile software development project, the whole team and not just the tester <br>v. Is true. Critical thinking is one of the most important skills of testers <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-1.5.1"
+    },
+    {
+        "question": "How is the whole team approach present in the interactions between testers and business representatives?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Business representatives decide on test automation approaches", "correct": false },
+          { "text": "b) Testers help business representatives to define test strategy", "correct": false },
+          { "text": "c) Business representatives are not part of the whole team approach", "correct": false },
+          { "text": "d) Testers help business representatives to create suitable acceptance tests ", "correct": true }
+        ],
+        "explanation": "a) Is not correct. The test automation approach is defined by testers with the help of developers and business representatives <br>b) Is not correct. The test strategy is decided in collaboration with the developers <br>c) Is not correct. Testers, developers, and business representatives are part of the whole team approach <br>d) Is correct. Testers will work closely with business representatives to ensure that the desired quality levels are achieved. This includes supporting and collaborating with them to help them create suitable acceptance tests  <br><br>FL-1.5.2"
+    },
+    {
+        "question": "Consider the following rule: “for every SDLC activity there is a corresponding test activity”. In which SDLC models does this rule hold?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Only in sequential SDLC models", "correct": false },
+          { "text": "b) Only in iterative SDLC models", "correct": false },
+          { "text": "c) Only in iterative and incremental SDLC models", "correct": false },
+          { "text": "d) In sequential, incremental, and iterative SDLC models", "correct": true }
+        ],
+        "explanation": "a) Is not correct <br>b) Is not correct <br>c) Is not correct <br>d) Is correct. This rule holds for all SDLC models  <br><br>FL-2.1.2"
+    },
+    {
+        "question": "Which of the following statements BEST describes the acceptance test-driven development (ATDD) approach?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) In ATDD, acceptance criteria are typically created based on the given/when/then format", "correct": false },
+          { "text": "b) In ATDD, test cases are mainly created at component testing and are code-oriented", "correct": false },
+          { "text": "c) In ATDD, tests are created, based on acceptance criteria to drive the development of the related software", "correct": true },
+          { "text": "d) in ATDD, tests are based on the desired behavior of the software, which makes it easier for team members to understand them", "correct": false }
+        ],
+        "explanation": "a) Is not correct. It is more often used in behavior-driven development (BDD) <br>b) Is not correct. It is the description of test-driven development (TDD) <br>c) Is correct. In acceptance test-driven development (ATDD) tests are written from acceptance criteria as part of the design process <br>d) Is not correct. It is used in BDD  <br><br>FL-2.1.3"
+    },
+    {
+        "question": "Which of the following is NOT an example of the shift left approach?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Reviewing the user requirements before they are formally accepted by the stakeholders", "correct": false },
+          { "text": "b) Writing a component test before the corresponding code is written", "correct": false },
+          { "text": "c) Executing a performance efficiency test for a component during component testing", "correct": false },
+          { "text": "d) Writing a test script before setting up the configuration management process", "correct": true }
+        ],
+        "explanation": "a) Is not correct. Early review is an example of the shift left approach <br>b) Is not correct. TDD is an example of the shift left approach <br>c) Is not correct. Early non-functional testing is an example of the shift left approach <br>d) Is correct. Test scripts should be subject to configuration management, so it makes no sense to create the test scripts before this process is set up  <br><br>FL-2.1.5"
+    },
+    {
+        "question": "Which of the arguments below would you use to convince your manager to organize retrospectives at the end of each release cycle?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Retrospectives are very popular these days and clients would appreciate it if we added them to our processes", "correct": false },
+          { "text": "b) Organizing retrospectives will save the organization money because without them end user representatives do not provide immediate feedback about the product", "correct": false },
+          { "text": "c) Process weaknesses identified during the retrospective can be analyzed and serve as a to do list for the organization’s continuous process improvement program", "correct": true },
+          { "text": "d) Retrospectives embrace five values including courage and respect, which are crucial to maintain continuous improvement in the organization", "correct": false }
+        ],
+        "explanation": "a) Is not correct. Retrospectives are more useful for identifying improvement opportunities and have little importance for clients <br>b) Is not correct. Retrospectives are not aimed to collect feedback about the product, but about the process. Additionally, retrospectives are internal activity for the team and should not include end user representatives <br>c) Is correct. Regularly conducted retrospectives, when appropriate follow up activities occur, are critical to continual improvement of development and testing <br>d) Is not correct. Courage and respect are values of Extreme Programming and are not closely related to retrospectives   <br><br>FL-2.1.6"
+    },
+    {
+        "question": "Which types of failures (1-4) fit which test levels (A-D) BEST? <br>1. Failures in system behavior as it deviates from the user’s business needs <br>2. Failures in communication between components <br>3. Failures in logic in a module <br>4. Failures in not correctly implemented business rules<br><br> <br>A. Component testing <br>B. Component integration testing <br>C. System testing <br>D. Acceptance testing",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 1D, 2B, 3A, 4C", "correct": true },
+          { "text": "b) 1D, 2B, 3C, 4A", "correct": false },
+          { "text": "c) 1B, 2A, 3D, 4C", "correct": false },
+          { "text": "d) 1C, 2B, 3A, 4D", "correct": false }
+        ],
+        "explanation": "Considering: <br>- The test basis for acceptance testing is the user’s business needs (1D) <br>- Communication between components is tested during component integration testing (2B) <br>- Failures in logic can be found during component testing (3A) <br>- Business rules are the test basis for system testing (4C) <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-2.2.1"
+    },
+    {
+        "question": "You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three consecutive versions of the software as follows: <br> <img src=\"img/qA14.png\"> <br> Tests are repeated once you are informed that all defects found in the test run are corrected and a new version of the software is available. <br> Which of the above tests are executed as regression tests?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Only 4, 7, 8, 9", "correct": false },
+          { "text": "b) Only 5, 7", "correct": true },
+          { "text": "c) Only 4, 6, 8, 9", "correct": false },
+          { "text": "d) Only 5, 6", "correct": false }
+        ],
+        "explanation": "Because TC1 and TC3 failed in Execution 1 (i.e., test (1) and test (3)), test (4) and test (6) are confirmation tests. <br>Because TC2 and TC3 failed in Execution 2 (i.e., tests (5) and (6)), test (8) and test (9) are also confirmation tests. <br>TC2 passed in Execution 1 (i.e., test (2)), so test (5) is a regression test. <br>TC1 passed in the Execution 2 (i.e., test (4)), so test (7) is also a regression test. <br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct  <br><br>FL-2.2.3"
+    },
+    {
+        "question": "Which of the following is NOT a benefit of static testing?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Having less expensive defect management due to the ease of detecting defects later in the SDLC", "correct": true },
+          { "text": "b) Fixing defects found during static testing is generally much less expensive than fixing defects found during dynamic testing", "correct": false },
+          { "text": "c) Finding coding defects that might not have been found by only performing dynamic testing", "correct": false },
+          { "text": "d) Detecting gaps and inconsistencies in requirements", "correct": false }
+        ],
+        "explanation": "a) Is correct. Defect management is no less expensive. Finding and fixing defects later in SDLC is more costly <br>b) Is not correct. This is a benefit of static testing <br>c) Is not correct. This is a benefit of static testing <br>d) Is not correct. This is a benefit of static testing  <br><br>FL-3.1.2"
+    },
+    {
+        "question": "Which of the following is a benefit of early and frequent feedback?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) It improves the test process for future projects", "correct": false },
+          { "text": "b) It forces customers to prioritize their requirements based on agreed risks", "correct": false },
+          { "text": "c) It provides a measure for the quality of changes", "correct": false },
+          { "text": "d) It helps avoid requirements misunderstandings", "correct": true }
+        ],
+        "explanation": "a) Is not correct. Feedback can improve the test process, but if one only wants to improve future projects, the feedback does not need to come early or frequently <br>b) Is not correct. Feedback is not used to prioritize requirements <br>c) Is not correct. There is no one, recommended way to measure quality of changes. Also, this is not one of the benefits of early feedback that are mentioned in section 3.2.1 <br>d) Is correct. Early and frequent feedback can prevent misunderstandings about requirements <br><br>FL-3.2.1"
+    },
+    {
+        "question": "The reviews being used in your organization have the following attributes: <br>- There is the role of a scribe <br>- The main purpose is to evaluate quality <br>- The meeting is led by the author of the work product <br>- There is individual preparation <br>- A review report is produced <br>Which of the following review types is MOST likely being used? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Informal review ", "correct": false },
+          { "text": "b) Walkthrough", "correct": true },
+          { "text": "c) Technical review ", "correct": false },
+          { "text": "d) Inspection", "correct": false }
+        ],
+        "explanation": "Considering the attributes: <br>- Specified for walkthroughs, technical reviews, and inspections; thus, the reviews being performed cannot be informal reviews <br>- The purpose of evaluating quality is one of the most important objectives of a walkthrough <br>- This is not allowed for inspections and is typically not done in technical reviews. A moderator is needed in walkthroughs and is allowed for informal reviews <br>- All types of reviews can include individual preparation (even informal reviews) <br>- All types of reviews can produce a review report, although informal reviews do not require documentation <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct  <br><br>FL-3.2.4"
+    },
+    {
+        "question": "Which of these statements is NOT a factor that contributes to successful reviews?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Participants should dedicate adequate time for the review", "correct": false },
+          { "text": "b) Splitting large work products into small parts to make the required effort less intense", "correct": false },
+          { "text": "c) Participants should avoid behaviors that might indicate boredom, exasperation, or hostility to other participants", "correct": false },
+          { "text": "d) Failures found should be acknowledged, appreciated, and handled objectively", "correct": true }
+        ],
+        "explanation": "a) Is not correct. Adequate time for individuals is a success factor <br>b) Is not correct. Splitting work products into small adequate parts is a success factor <br>c) Is not correct. Avoiding behaviors that might indicate boredom, exasperation, etc. is a success factor <br>d) Is correct. During reviews one can find defects, not failures <br><br>FL-3.2.5"
+    },
+    {
+        "question": "Which of the following is a characteristic of experience-based test techniques?",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) Test cases are created based on detailed design information", "correct": false },
+          { "text": "b) Items tested within the interface code section are used to measure coverage", "correct": false },
+          { "text": "c) The techniques heavily rely on the tester’s knowledge of the software and the business domain", "correct": true },
+          { "text": "d) The test cases are used to identify deviations from the requirements", "correct": false }
+        ],
+        "explanation": "a) Is not correct. This is a common characteristic of white-box test techniques. Test conditions, test cases, and test data are derived from a test basis that may include code, software architecture, detailed design, or any other source of information regarding the structure of the software. <br>b) Is not correct. This is a common characteristic of white-box test techniques. Coverage is measured based on the items tested within a selected structure and the technique applied to the test basis <br>c) Is correct. This is a common characteristic of experience-based test techniques. This knowledge and experience include expected use of the software, its environment, likely defects, and the distribution of those defects is used to define tests <br>d) Is not correct. This is a common characteristic of black-box test techniques. Test cases may be used to detect gaps within requirements and the implementation of the requirements, as well as deviations from the requirements <br><br>FL-4.1.1"
+    },
+    {
+        "question": "You are testing a simplified apartment search form which has only two search criteria: <br>- floor (with three possible options: ground floor; first floor; second or higher floor) <br>- garden type (with three possible options: no garden; small garden; large garden) <br>Only apartments on the ground floor have gardens. The form has a built-in validation mechanism that will not allow you to use the search criteria which violate this rule. <br>Each test has two input values: floor and garden type. You want to apply equivalence partitioning (EP) to cover each floor and each garden type in your tests. <br><br>What is the minimal number of test cases to achieve 100% EP coverage? ",
+        "selectCount": 1,
+        "options": [
+          { "text": "a) 3", "correct": false },
+          { "text": "b) 4", "correct": true },
+          { "text": "c) 5", "correct": false },
+          { "text": "d) 6", "correct": false }
+        ],
+        "explanation": "“Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. <br>We need two more test cases to cover the two other “floor” partitions and a remaining ”garden type” partition of “no garden”. <br>We need a total of four test cases: <br>- TC1 (ground floor, small garden) <br>- TC2 (ground floor, large garden) <br>- TC3 (first floor, no garden) <br>- TC4 (second or higher floor, no garden) <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.1"
     }
 ]
