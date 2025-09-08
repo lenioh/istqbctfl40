@@ -1,6 +1,6 @@
 [ 
  {
-        "question": "<img src=\"img/QAD/QAD1.png\">",
+        "question": "<img src=\"QAD/QAD1.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -11,7 +11,7 @@
         "explanation": "Correct answer: d) – FL-1.1.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD2.png\">",
+        "question": "<img src=\"QAD/QAD2.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -22,7 +22,7 @@
         "explanation": "Correct answer: c) – FL-1.2.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD3.png\">",
+        "question": "<img src=\"QAD/QAD3.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -33,7 +33,7 @@
         "explanation": "Correct answer: a) – FL-1.3.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD4.png\">",
+        "question": "<img src=\"QAD/QAD4.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -44,7 +44,7 @@
         "explanation": "Correct answer: b) – FL-1.4.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD5.png\">",
+        "question": "<img src=\"QAD/QAD5.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -55,7 +55,7 @@
         "explanation": "Correct answer: a) – FL-1.4.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD6.png\">",
+        "question": "<img src=\"QAD/QAD6.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -66,7 +66,7 @@
         "explanation": "Correct answer: d) – FL-1.4.5"
     },
     {
-        "question": "<img src=\"img/QAD/QAD7.png\">",
+        "question": "<img src=\"QAD/QAD7.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -77,7 +77,7 @@
         "explanation": "Correct answer: a) – FL-1.5.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD8.png\">",
+        "question": "<img src=\"QAD/QAD8.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -88,7 +88,7 @@
         "explanation": "Correct answer: b) – FL-1.5.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD9.png\">",
+        "question": "<img src=\"QAD/QAD9.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -99,7 +99,7 @@
         "explanation": "Correct answer: a) – FL-2.1.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD10.png\">",
+        "question": "<img src=\"QAD/QAD10.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -110,7 +110,7 @@
         "explanation": "Correct answer: a) – FL-2.1.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD11.png\">",
+        "question": "<img src=\"QAD/QAD11.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -121,7 +121,7 @@
         "explanation": "Correct answer: d) – FL-2.1.4"
     },
     {
-        "question": "<img src=\"img/QAD/QAD12.png\">",
+        "question": "<img src=\"QAD/QAD12.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -132,7 +132,7 @@
         "explanation": "Correct answer: b) – FL-2.1.6"
     },
     {
-        "question": "<img src=\"img/QAD/QAD13.png\">",
+        "question": "<img src=\"QAD/QAD13.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -143,7 +143,7 @@
         "explanation": "Correct answer: a) – FL-2.2.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD14.png\">",
+        "question": "<img src=\"QAD/QAD14.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -154,7 +154,7 @@
         "explanation": "Correct answer: b) – FL-2.3.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD15.png\">",
+        "question": "<img src=\"QAD/QAD15.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -165,7 +165,7 @@
         "explanation": "Correct answer: c) – FL-3.1.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD16.png\">",
+        "question": "<img src=\"QAD/QAD16.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -176,7 +176,7 @@
         "explanation": "Correct answer: c) – FL-3.1.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD17.png\">",
+        "question": "<img src=\"QAD/QAD17.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -187,7 +187,7 @@
         "explanation": "Correct answer: b) – FL-3.2.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD18.png\">",
+        "question": "<img src=\"QAD/QAD18.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -198,7 +198,7 @@
         "explanation": "Correct answer: b) – FL-3.2.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD19.png\">",
+        "question": "<img src=\"QAD/QAD19.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -209,7 +209,7 @@
         "explanation": "Correct answer: b) – FL-4.1.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD20.png\">",
+        "question": "<img src=\"QAD/QAD20.png\">",
         "selectCount": 2,
         "options": [
             { "text": "a)", "correct": false },
@@ -222,7 +222,7 @@
     },
 
     {
-        "question": "<img src=\"img/QAD/QAD21.png\">",
+        "question": "<img src=\"QAD/QAD21.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -233,7 +233,7 @@
         "explanation": "Correct answer: c) – FL-4.2.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD22.png\">",
+        "question": "<img src=\"QAD/QAD22.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -244,7 +244,7 @@
         "explanation": "Correct answer: a) – FL-4.2.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD23.png\">",
+        "question": "<img src=\"QAD/QAD23.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -255,7 +255,7 @@
         "explanation": "Correct answer: b) – FL-4.2.4"
     },
     {
-        "question": "<img src=\"img/QAD/QAD24.png\">",
+        "question": "<img src=\"QAD/QAD24.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -266,7 +266,7 @@
         "explanation": "Correct answer: c) – FL-4.3.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD25.png\">",
+        "question": "<img src=\"QAD/QAD25.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -277,7 +277,7 @@
         "explanation": "Correct answer: a) – FL-4.3.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD26.png\">",
+        "question": "<img src=\"QAD/QAD26.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -288,7 +288,7 @@
         "explanation": "Correct answer: c) – FL-4.4.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD27.png\">",
+        "question": "<img src=\"QAD/QAD27.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -299,7 +299,7 @@
         "explanation": "Correct answer: d) – FL-4.4.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD28.png\">",
+        "question": "<img src=\"QAD/QAD28.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -310,7 +310,7 @@
         "explanation": "Correct answer: d) – FL-4.5.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD29.png\">",
+        "question": "<img src=\"QAD/QAD29.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -321,7 +321,7 @@
         "explanation": "Correct answer: a) – FL-4.5.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD30.png\">",
+        "question": "<img src=\"QAD/QAD30.png\">",
         "selectCount": 2,
         "options": [
             { "text": "a)", "correct": false },
@@ -333,7 +333,7 @@
         "explanation": "Correct answers: b), d) – FL-5.1.3"
     },
     {
-        "question": "<img src=\"img/QAD/QAD31.png\">",
+        "question": "<img src=\"QAD/QAD31.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -344,7 +344,7 @@
         "explanation": "Correct answer: a) – FL-5.1.4"
     },
     {
-        "question": "<img src=\"img/QAD/QAD32.png\">",
+        "question": "<img src=\"QAD/QAD32.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -355,7 +355,7 @@
         "explanation": "Correct answer: b) – FL-5.1.5"
     },
     {
-        "question": "<img src=\"img/QAD/QAD33.png\">",
+        "question": "<img src=\"QAD/QAD33.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -366,7 +366,7 @@
         "explanation": "Correct answer: c) – FL-5.1.7"
     },
     {
-        "question": "<img src=\"img/QAD/QAD34.png\">",
+        "question": "<img src=\"QAD/QAD34.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -377,7 +377,7 @@
         "explanation": "Correct answer: b) – FL-5.2.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD35.png\">",
+        "question": "<img src=\"QAD/QAD35.png\">",
         "selectCount": 2,
         "options": [
             { "text": "a)", "correct": false },
@@ -389,7 +389,7 @@
         "explanation": "Correct answers: b), e) – FL-5.2.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD36.png\">",
+        "question": "<img src=\"QAD/QAD36.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -400,7 +400,7 @@
         "explanation": "Correct answer: c) – FL-5.3.2"
     },
     {
-        "question": "<img src=\"img/QAD/QAD37.png\">",
+        "question": "<img src=\"QAD/QAD37.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -411,7 +411,7 @@
         "explanation": "Correct answer: d) – FL-5.4.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD38.png\">",
+        "question": "<img src=\"QAD/QAD38.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": true },
@@ -422,7 +422,7 @@
         "explanation": "Correct answer: a) – FL-5.5.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD39.png\">",
+        "question": "<img src=\"QAD/QAD39.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },
@@ -433,7 +433,7 @@
         "explanation": "Correct answer: b) – FL-6.1.1"
     },
     {
-        "question": "<img src=\"img/QAD/QAD40.png\">",
+        "question": "<img src=\"QAD/QAD40.png\">",
         "selectCount": 1,
         "options": [
             { "text": "a)", "correct": false },

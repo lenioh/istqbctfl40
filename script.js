@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const files = ['questions_A.json', 'questions_B.json', 'questions_C.json', 'questions_D.json'];
     const randomFile = files[Math.floor(Math.random() * files.length)];
 
-    // fetch and shuffle questions from the selected file
     questions = shuffle(await fetch(randomFile).then(r => r.json()));
 
     document.getElementById('start-btn').onclick = startQuiz;

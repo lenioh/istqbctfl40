@@ -144,7 +144,7 @@
         "explanation": "Considering: <br>- The test basis for acceptance testing is the user’s business needs (1D) <br>- Communication between components is tested during component integration testing (2B) <br>- Failures in logic can be found during component testing (3A) <br>- Business rules are the test basis for system testing (4C) <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-2.2.1"
     },
     {
-        "question": "You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three consecutive versions of the software as follows: <br> <img src=\"img/QAA/qA14.png\"> <br> Tests are repeated once you are informed that all defects found in the test run are corrected and a new version of the software is available. <br> Which of the above tests are executed as regression tests?",
+        "question": "You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three consecutive versions of the software as follows: <br> <img src=\"QAA/qA14.png\"> <br> Tests are repeated once you are informed that all defects found in the test run are corrected and a new version of the software is available. <br> Which of the above tests are executed as regression tests?",
         "selectCount": 1,
         "options": [
           { "text": "a) Only 4, 7, 8, 9", "correct": false },
@@ -221,7 +221,7 @@
         "explanation": "“Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. <br>We need two more test cases to cover the two other “floor” partitions and a remaining ”garden type” partition of “no garden”. <br>We need a total of four test cases: <br>- TC1 (ground floor, small garden) <br>- TC2 (ground floor, large garden) <br>- TC3 (first floor, no garden) <br>- TC4 (second or higher floor, no garden) <br><br>Thus: <br>a) Is not correct <br>b) Is correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.1"
     },
     {
-        "question": "You are testing a system that calculates the final course grade for a given student. <br>The final grade is assigned based on the final result, according to the following rules: <br>- 0 – 50 points: failed <br>- 51 – 60 points: fair <br>- 61 – 70 points: satisfactory <br>- 71 – 80 points: good <br>- 81 – 90 points: very good <br>- 91 – 100 points: excellent <br>You have prepared the following set of test cases: <br> <img src=\"img/QAA/qA21.png\"> <br>What is the 2-value Boundary Value Analysis (BVA) coverage for the final result that is achieved with the existing test cases?",
+        "question": "You are testing a system that calculates the final course grade for a given student. <br>The final grade is assigned based on the final result, according to the following rules: <br>- 0 – 50 points: failed <br>- 51 – 60 points: fair <br>- 61 – 70 points: satisfactory <br>- 71 – 80 points: good <br>- 81 – 90 points: very good <br>- 91 – 100 points: excellent <br>You have prepared the following set of test cases: <br> <img src=\"QAA/qA21.png\"> <br>What is the 2-value Boundary Value Analysis (BVA) coverage for the final result that is achieved with the existing test cases?",
         "selectCount": 1,
         "options": [
           { "text": "a) 50%", "correct": true },
@@ -232,7 +232,7 @@
         "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. <br>The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). <br>Therefore, the test cases cover 6/12 = 50%. <br><br>Thus: <br>a) Is correct <br>b) Is not correct <br>c) Is not correct <br>d) Is not correct <br><br>FL-4.2.2"
     },
     {
-        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"img/QAA/qA22.png\"> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
+        "question": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship <br>Management system and asked you, one of their most loyal members, to test it. <br>The implemented features are as follows: <br>- Anyone can rent a bicycle, but members receive a 20% discount <br>- However, if the return deadline is missed, the discount is no longer available <br>- After 15 rentals, members get a gift: a T-Shirt <br>Decision table describing the implemented features looks as follows: <br> <img src=\"QAA/qA22.png\"> <br> Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
         "selectCount": 1,
         "options": [
           { "text": "a) R4", "correct": false },
@@ -243,7 +243,7 @@
         "explanation": "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals <br>b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times <br>c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet <br>d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct <br><br>FL-4.2.3"
     },
     {
-        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"img/QAA/qA23.png\"> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
+        "question": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. <br> <img src=\"QAA/qA23.png\"> <br>What is the MINIMAL number of test cases to achieve valid transitions coverage? ",
         "selectCount": 1,
         "options": [
           { "text": "a) 4", "correct": false },
@@ -354,7 +354,7 @@
         "explanation": "In the three-point estimation technique: <br>E = (optimistic + 4*most likely + pessimistic)/6 <br>E = (2+(4*11)+14)/6 = 10 <br><br>Thus: <br>a) Is not correct <br>b) Is not correct <br>c) Is not correct <br>d) Is correct <br><br>FL-5.1.3"
     },
     {
-        "question": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities (i.e., a smaller number means a higher priority), and dependencies: <br> <img src=\"img/QAA/qA33.png\"> <br><br>Which of the following test cases should be executed as the third one?",
+        "question": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities (i.e., a smaller number means a higher priority), and dependencies: <br> <img src=\"QAA/qA33.png\"> <br><br>Which of the following test cases should be executed as the third one?",
         "selectCount": 1,
         "options": [
           { "text": "a) TC 003", "correct": true },
