@@ -1,0 +1,463 @@
+[
+    {
+      "question": "Which of the following is an example of why testing is necessary?",
+      "selectCount": 1,
+      "options": [
+        { "text": "a) Dynamic testing increases quality by causing test objects to fail in ways that could never be achieved by the users", "correct": false },
+        { "text": "b) Static testing is used by developers to identify failures in their program code earlier than can be achieved through dynamic testing", "correct": false },
+        { "text": "c) Static analysis provides evidence to customers that the elements of the system that provide no outputs are fit for release", "correct": false },
+        { "text": "d) Reviews increase the quality of requirements specifications and lead to fewer changes being needed in derived work products", "correct": true }
+      ],
+      "explanation": "a) Incorrect – Dynamic testing should reveal defects that could occur in real use, not failures users would never experience.<br>b) Incorrect – Static testing finds defects, not failures (failures occur only during execution).<br>c) Incorrect – Static analysis does not prove fitness for release, it only checks code quality and standards.<br>d) Correct – Reviews improve the quality of requirements, reducing later changes and costs. This shows why testing is necessary.<br><br>FL-1.2.1"
+    },
+
+    {
+     "question": "Which of the following statements about quality assurance (QA) and/or quality control (QC) is correct?",
+     "options": [
+        {"text": "a) QA is performed as part of testing", "correct": false},
+        {"text": "b) Testing is performed as part of QC", "correct": true},
+        {"text": "c) Testing is another term for QC", "correct": false},
+        {"text": "d) Testing is performed as part of QA", "correct": false}
+     ],
+        "explanation": "a) Incorrect – QA is about processes and defect prevention, not part of testing.<br>b) Correct – Testing is an activity within Quality Control, which focuses on detecting defects in the product.<br>c) Incorrect – Testing is one element of QC but not the same as QC itself.<br>d) Incorrect – Testing is detective (QC), not preventive (QA).<br><br>FL-1.2.2"
+    },
+
+    {
+        "question": "One of the ‘principles of testing’ states that exhaustive testing is impossible. Which of the following is an example of addressing this principle in practice?",
+        "selectCount": 1,
+        "options": [
+        { "text": "a) Creating test cases that cover every possible specified output", "correct": false },
+        { "text": "b) Documenting all possible test input variations and prioritizing these based on importance", "correct": false },
+        { "text": "c) Starting testing as early as possible with reviews and other static testing approaches", "correct": false },
+        { "text": "d) Using equivalence partitioning and boundary value analysis to generate test cases", "correct": true }
+        ],
+        "explanation": "a) Incorrect – Exhaustive testing is impossible; covering every output is not feasible.<br>b) Incorrect – Listing all inputs is still exhaustive and unrealistic.<br>c) Incorrect – Early testing is a different principle (principle 3).<br>d) Correct – Equivalence partitioning and boundary value analysis reduce test cases while still giving good coverage, directly addressing the impossibility of exhaustive testing.<br><br>FL-1.3.1"
+    },
+
+    {
+        "question": "Which test activity involves working with test data requirements, test conditions, test environment requirements and test cases?",
+        "selectCount": 1,
+        "options": [
+        { "text": "a) Test design", "correct": true },
+        { "text": "b) Test execution", "correct": false },
+        { "text": "c) Test analysis", "correct": false },
+        { "text": "d) Test implementation", "correct": false }
+        ],
+    "explanation": "Correct answer: a) Test design – Test design involves creating test conditions, test cases, test data, and identifying environment requirements. Other options describe different stages of the test process.<br><br>FL-1.4.1"
+    },
+
+    {
+        "question": "Which of the following is MOST likely to impact how testing is performed for a given test object?",
+        "selectCount": 1,
+        "options": [
+        { "text": "a) The average level of experience of the organization’s marketing team", "correct": false },
+        { "text": "b) The knowledge of users that a new system is being developed for them", "correct": false },
+        { "text": "c) The number of years’ experience of the members of the test team", "correct": true },
+        { "text": "d) The end user’s organizational structure for a commercial music streaming application", "correct": false }
+        ],
+        "explanation": "Correct answer: c) – The number of years’ experience of the members of the test team is likely to impact their testing approach and effectiveness. Other options are less relevant.<br><br>FL-1.4.2"
+  },
+
+  {
+    "question": "Which of the following statements is a CORRECT example of the value of traceability?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) Traceability between the mitigated risks and passing test cases provides a means of determining the level of residual risk", "correct": false },
+      { "text": "b) Traceability between user requirements and test execution results provides a means of measuring project progress against business goals", "correct": true },
+      { "text": "c) Traceability between testers and failing test cases provides a means of determining the skill level of the testers", "correct": false },
+      { "text": "d) Traceability between the identified risks and written test conditions provides a means of determining which risks are worth testing", "correct": false }
+    ],
+    "explanation": "Correct answer: b) – Traceability from requirements to tests and results shows coverage and progress toward business goals. The other options misinterpret traceability’s purpose.<br><br>FL-1.4.4"
+  },
+
+  {
+    "question": "Which of the following is MOST likely to be an example of a tester using a generic skill when testing?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) The tester’s deep knowledge of a variety of computer games meant that they got on well with one of the developers who was also into gaming", "correct": false },
+      { "text": "b) The tester was a former pilot and was better able to understand the acceptance criteria for the helicopter control system", "correct": true },
+      { "text": "c) The tester previously worked as a programmer and used their skills in this area to better communicate with the business analysts", "correct": false },
+      { "text": "d) The tester was very careful not to make mistakes when they methodically generated test cases prior to starting their exploratory testing session", "correct": false }
+    ],
+    "explanation": "Correct answer: b) – Being methodical and careful is a generic skill that can be applied across domains. The other options are examples of domain or technical skills.<br><br>FL-1.5.1"
+  },
+
+  {
+    "question": "Which of the following is an advantage of the whole-team approach?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) It allows team members to take on any role at any time", "correct": false },
+      { "text": "b) It only needs a single team to support the complete development project", "correct": false },
+      { "text": "c) It embeds business representatives alongside developers in the same team", "correct": false },
+      { "text": "d) It generates a team synergy that benefits the entire project", "correct": true }
+    ],
+    "explanation": "Correct answer: d) – The whole-team approach fosters collaboration and communication, leading to better outcomes for the project.<br><br>FL-1.5.2"
+  },
+
+  {
+    "question": "Which of the following statements about the chosen software development lifecycle is CORRECT?",
+    "selectCount": 1,
+    "options": [
+        { "text": "a) If agile software development is used, system test automation replaces the need for regression testing", "correct": false },
+        { "text": "b) If a sequential development model is used, then the dynamic testing is typically restricted to later in the lifecycle", "correct": true },
+        { "text": "c) If an iterative development model is used, then component testing is typically performed manually by developers", "correct": false },
+        { "text": "d) If an incremental development model is used, then static testing is done in early increments and dynamic testing in later increments", "correct": false }
+    ],
+    "explanation": "Correct answer: b) – In sequential lifecycle models (e.g., Waterfall, V-model), dynamic testing activities usually start only after the implementation phase. Automation never removes the need for regression testing (a). Iterative models do not require only manual component testing (c). In incremental models, both static and dynamic testing are performed in every increment, not separately (d).<br><br>FL-2.1.2 "
+    },
+
+    {
+        "question": "Which of the following is a good testing practice that applies to all software development lifecycles?",
+        "selectCount": 1,
+        "options": [
+        { "text": "a) Testers should review work products as part of the next development phase", "correct": false },
+        { "text": "b) Testers should review work products as soon as drafts are available", "correct": true },
+        { "text": "c) Testers should review work products before test analysis and design begins", "correct": false },
+        { "text": "d) Testers should review work products immediately after they are published", "correct": false }
+        ],
+     "explanation": "Correct answer: b) – A key principle is 'early testing saves time and money.' Testers should review drafts of work products as soon as they are available. This applies across all lifecycles. Waiting until later phases (a, c, d) delays defect detection and increases costs.<br><br>FL-2.1.3"
+    },
+
+    {
+        "question": "Which of the following is an example of a test-first approach to development?",
+        "selectCount": 1,
+        "options": [
+        { "text": "a) Test-Driven Development", "correct": true },
+        { "text": "b) Coverage-Driven Development", "correct": false },
+        { "text": "c) Quality-Driven Development", "correct": false },
+        { "text": "d) Feature-Driven Development", "correct": false }
+        ],
+     "explanation": "Correct answer: a) – A key principle is 'early testing saves time and money.' Testers should review drafts of work products as soon as they are available. This applies across all lifecycles. Waiting until later phases (b, c, d) delays defect detection and increases costs.<br><br>FL-2.1.3"
+    },
+
+  {
+    "question": "Which of the following statements about DevOps is CORRECT?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) To speed up releases, continuous integration is used to encourage developers to submit code quickly without the need to complete component testing", "correct": false },
+      { "text": "b) To be able to update and release systems on a more frequent basis, many automated regression tests are required to reduce the danger of regression", "correct": true },
+      { "text": "c) To treat both developers and operations equally, the testers will allocate more effort to release testing by operations using a shift-right approach", "correct": false },
+      { "text": "d) To create increased synergy between testers, developers and operations, the testing must become fully automated with no manual testing", "correct": false }
+    ],
+    "explanation": "Correct answer: b) – In DevOps, continuous integration supports faster and frequent code submission, enabling quicker releases. The other options misrepresent DevOps practices.<br><br>FL-2.1.4"
+  },
+
+  {
+    "question": "Which of the following is MOST likely to be performed as part of system testing?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) Security testing of a credit management system by an independent test team", "correct": true },
+      { "text": "b) Testing the interface of a currency exchange system with an external banking system", "correct": false },
+      { "text": "c) Beta testing of a remote learning system by courseware developers", "correct": false },
+      { "text": "d) Testing interactions between the user interface and database of a human resources system", "correct": false }
+    ],
+    "explanation": "Correct answer: a) – System testing focuses on testing the system as a whole, including interactions with external systems. Other options describe acceptance or integration testing.<br><br>FL-2.2.1"
+  },
+
+  {
+    "question": "Which of the following statements is CORRECT?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) Regression tests increase in number as the project progresses, whereas the number of confirmation tests decreases as the project progresses", "correct": false },
+      { "text": "b) Regression tests are created and run when the test object is fixed, whereas confirmation tests are run whenever the test object is enhanced", "correct": false },
+      { "text": "c) Regression testing is concerned with checking that the operational environment remains unchanged, whereas confirmation testing is concerned with testing changes to the test object", "correct": false },
+      { "text": "d) Regression testing is concerned with adverse effects in unchanged code, whereas confirmation testing is concerned with testing changed code", "correct": true }
+    ],
+    "explanation": "Correct answer: d) – Regression testing focuses on identifying unintended side effects in unchanged code, while confirmation testing verifies that specific changes work as intended.<br><br>FL-2.2.3"
+  },
+
+  {
+    "question": "Which of the following is an example of a defect that can be found by static testing but NOT by dynamic testing?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) Lack of usability provided through the user interface", "correct": false },
+      { "text": "b) Code with no path that reaches it", "correct": true },
+      { "text": "c) Poor response times for most of the expected users", "correct": false },
+      { "text": "d) Required features that are not implemented in the code", "correct": false }
+    ],
+    "explanation": "Correct answer: b) – Static testing (reviews, static analysis) can detect missing functionality against requirements, which dynamic testing cannot reveal since the feature is not implemented at all.<br><br>FL-3.1.3"
+  },
+
+  {
+    "question": "Which of the following is a benefit of early and frequent stakeholder feedback?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) Managers are aware of which developers are less productive", "correct": false },
+      { "text": "b) It allows project managers to prioritize their stakeholder interactions", "correct": false },
+      { "text": "c) It facilitates early communication of potential quality issues", "correct": true },
+      { "text": "d) End users better understand why the delivery of the work product is delayed", "correct": false }
+    ],
+    "explanation": "Correct answer: c) – Early and frequent feedback allows stakeholders to communicate potential quality issues early in the project, reducing risks and improving outcomes.<br><br>FL-3.2.1"
+  },
+
+  {
+    "question": "Given the following task descriptions: <br>1. The quality characteristics to be evaluated and the exit criteria are selected<br> <br>2. Everyone has access to the work product<br><br>3. Anomalies are identified in the work product<br><br>4. Anomalies are discussed<br><br>And the following review activities<br><br>A. Individual review<br><br>B. Review initiation<br><br>C. Planning<br><br>D. Communication and analysis<br>Which of the following BEST matches the task descriptions and activities? ",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) 1B, 2C, 3D, 4A", "correct": false },
+      { "text": "b) 1B, 2D, 3C, 4A", "correct": false },
+      { "text": "c) 1C, 2A, 3B, 4D", "correct": false },
+      { "text": "d) 1C, 2B, 3A, 4D", "correct": true }
+    ],
+    "explanation": "Correct answer: d) – Matches review tasks with activities: selecting quality characteristics (B), ensuring access to work product (D), identifying anomalies (C), and discussing anomalies (A).<br><br>FL-3.2.2"
+  },
+  {
+    "question": "Given the following roles and responsibilities in reviews, which BEST matches the pairs?<br> 1. Scribe<br> <br>2. Review leader<br><br> 3. Facilitator<br> 4. Manager<br> And the following responsibilities in reviews:<br> A. Ensures the effective running of review meetings and the setting up a safe review environment<br> B. Records review information, such as decisions and new anomalies found during the review meeting<br> C. Decides what is to be reviewed and provides resources, such as staff and time for the review<br> D. Takes overall responsibility for the review such as organizing when and where the review will take place",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) 1A, 2B, 3D, 4C", "correct": false },
+      { "text": "b) 1A, 2C, 3B, 4D", "correct": false },
+      { "text": "c) 1B, 2D, 3A, 4C", "correct": true },
+      { "text": "d) 1B, 2D, 3C, 4A", "correct": false }
+    ],
+    "explanation": "Correct answer: c) – Roles: Scribe records info (B), Review leader organizes review (D), Facilitator ensures effective meetings (A), Manager provides resources and decides what to review (C).<br><br>FL-3.2.3"
+  },
+
+  {
+    "question": "Which of the following statements BEST describes the difference between decision table testing and branch testing?",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) In decision table testing, the test cases are derived from the decision statements in the code. In branch testing, the test cases are derived from knowledge of the control flow of the test object.", "correct": false },
+      { "text": "b) In decision table testing, the test cases are derived from the specification that describes the business logic. In branch testing the test cases are based on anticipation of potential defects in the source code.", "correct": false },
+      { "text": "c) In decision table testing, the test cases are derived from knowledge of the control flow of the test object. In branch testing, test cases are derived from the specification that describes the business logic.", "correct": false },
+      { "text": "d) In decision table testing, the test cases are independent of how the software is implemented. In branch testing, test cases can be created only after the design or implementation of the code.", "correct": true }
+    ],
+    "explanation": "Correct answer: d) – Decision table testing is specification-based and independent of implementation. Branch testing requires knowledge of code structure and can only be applied after design/implementation.<br><br>FL-4.1.1"
+  },
+
+  {
+    "question": "Customers of the TestWash car wash chain have cards with a record of the number of washes they have bought so far. The initial value is 0. After entering the car wash, the system increases the number on the card by one. This value represents the number of the current wash. Based on this number the system decides what discount the customer is entitled to. For every tenth wash the system gives a 10% discount, and for every twentieth wash, the system gives a further 40% discount (i.e., a 50% discount in total). Which of the following sets of input data (understood as the numbers of the current wash) achieves the highest equivalence partition coverage? ",
+    "selectCount": 1,
+    "options": [
+      { "text": "a) 19, 20, 30", "correct": true},
+      { "text": "b) 11, 12, 20", "correct": false },
+      { "text": "c) 1, 10, 50", "correct": false },
+      { "text": "d) 10, 29, 30, 31", "correct": false }
+    ],
+    "explanation": "Correct answer: a) – Covers the main partitions: 19th wash (no discount), 20th wash (10% discount), and 30th wash (50% discount). This achieves maximum equivalence partition coverage.<br><br>FL-4.2.1"
+  },
+
+  {
+  "question": "You are testing a form that verifies the correctness of the length of the password given as input. The form accepts a password with the correct length and rejects a password that is too short or too long. The password length is correct if it has between 6 and 12 characters inclusive. Otherwise, it is considered incorrect. At first, the form is empty (password length = 0). You apply boundary value analysis to the “password length” variable. Your set of test cases achieves 100% 2-value boundary value coverage. The team decided that due to the high risk of this component, test cases should be added to ensure 100% 3-value boundary value coverage. Which additional password lengths should be tested to achieve this?",
+  "selectCount": 1,
+  "options": [
+    { "text": "a) 4, 5, 13, 14", "correct": false },
+    { "text": "b) 7, 11", "correct": false },
+    { "text": "c) 1, 5, 13", "correct": false },
+    { "text": "d) 1, 4, 7, 11, 14", "correct": true }
+  ],
+  "explanation": "Correct answer: d) – For 3-value boundary analysis, you test the boundary minus one, the boundary itself, and the boundary plus one for both the lower and upper limits (6 and 12). This gives additional values 1 (far below), 4 (just below lower), 7 (just above lower), 11 (just below upper), and 14 (just above upper) to ensure full coverage.<br><br>FL-4.2.2"
+    },
+
+    {
+        "question": "<img src=\"img/QAB/qB22.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false }
+        ],
+        "explanation": "Correct answer: b) – FL-4.2.3"
+    },
+
+    {
+        "question": "<img src=\"img/QAB/qB23.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": true },
+            { "text": "d)", "correct": false }
+        ],
+        "explanation": "Correct answer: c) – FL-4.2.4"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB24.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false }
+        ],
+        "explanation": "Correct answer: b) – FL-4.3.1"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB25.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": true },
+            { "text": "d)", "correct": false }
+        ],
+        "explanation": "Correct answer: c) – FL-4.3.2"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB26.png\">",
+        "selectCount": 2,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false },
+            { "text": "e)", "correct": true }
+        ],
+        "explanation": "Correct answer: a) e) – FL-4.4.2"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB27.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": true}
+        ],
+        "explanation": "Correct answer: c) – FL-4.4.3"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB28.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: c) – FL-4.5.2"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB29.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": true}
+        ],
+        "explanation": "Correct answer: d) – FL-4.5.3"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB30.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: a) – FL-5.1.3"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB31.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: b) – FL-5.1.4"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB32.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: b) – FL-5.1.5"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB33.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": true}
+        ],
+        "explanation": "Correct answer: d) – FL-5.1.7"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB34.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": true },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: c) – FL-5.2.4"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB35.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: a) – FL-5.3.1"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB36.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: a) – FL-5.3.3"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB37.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: a) – FL-5.4.1"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB38.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": true },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: b) – FL-5.4.1"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB39.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": false },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": true },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: c) – FL-6.1.1"
+    },
+    {
+        "question": "<img src=\"img/QAB/qB40.png\">",
+        "selectCount": 1,
+        "options": [
+            { "text": "a)", "correct": true },
+            { "text": "b)", "correct": false },
+            { "text": "c)", "correct": false },
+            { "text": "d)", "correct": false}
+        ],
+        "explanation": "Correct answer: a) – FL-6.2.1"
+    }
+]
