@@ -50,12 +50,15 @@ function showSummaryModal() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // randomly select a questionnaire file
+    // randomly select ONE questionnaire file on load
     const files = ['questions_A.json', 'questions_B.json', 'questions_C.json', 'questions_D.json'];
     const randomFile = files[Math.floor(Math.random() * files.length)];
 
-    questions = shuffle(await fetch(randomFile).then(r => r.json()));
+    // fetch and shuffle questions from the selected file
+    const questionsData = await fetch(randomFile).then(r => r.json());
+    questions = shuffle(questionsData);
 
+    // wire up buttons (these won’t re-select the file)
     document.getElementById('start-btn').onclick = startQuiz;
     document.getElementById('submit-btn').onclick = handleSubmit;
     document.getElementById('next-btn').onclick = handleNext;
